@@ -1,0 +1,1681 @@
+##########CSS###############
+button{
+    width:100%;
+    height:50px;
+    border-radius: 10px;
+    cursor: pointer;
+    color:white;
+    font-size: 20px;
+}
+.botao-azul{
+    background-color:#0069d9;
+}
+.center {
+    align-items: center;
+    margin-top:20%;
+}
+.row{
+    padding:10px;
+}
+body{
+    color: black;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f3ff00;
+}
+a, a:hover {
+    color:black;
+}
+h1{
+    font-size: 57px;
+    font-weight: 200;
+    display:inline;
+}
+h2{
+    padding:0;
+    margin:0;
+}
+.h1-pequeno{
+    font-size: 40px;
+    font-weight: 200;
+    display:inline;
+}
+.logo{
+    height: 470px;
+    width: 100%;
+    margin-bottom: 100px;
+}
+.cabecalho{
+    background-color: rgb(212, 253, 29);
+    text-align: center;
+    font-weight: bold;
+}
+
+.navbar {
+    overflow: scroll;
+    background-color: #cffc03;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    /*padding: 30px 16px;*/
+    padding: 10px 0px;
+    margin-right: 30px; 
+    text-decoration: none;
+    font-size: 17px;
+    width: 25%;
+}
+
+.navbar a:hover {
+    background: #cffc03;
+    color: black;
+}
+
+.navbar a.active {
+    background-color: #cffc03;
+    color: black;
+    font-weight: 700;
+}
+
+.icon{
+    color:#CCCCCC;
+    height: 45px;
+    fill:#cccccc;
+    width: 45px;
+}
+.centro{
+    align-content: center;
+    align-self: center;
+    align-items: center;
+    box-align: center;
+
+}
+.imagem{
+    height: auto;
+    width: auto;
+    margin-left: auto;
+}
+
+
+.imagem{
+    width: 90%;
+    margin-left: 2%;
+    }
+
+.inferior{
+    float:bottom;
+}
+.menu{
+    position: static;
+  }
+#elemento{
+	color: black;
+	padding: 10px 10px;
+}
+h3 {
+	display: inline; 
+}
+.spanIncorreto{
+	color:red;
+}
+.title{
+	font-weight:bold;
+}
+body {
+	position: relative;
+	background-color: white;
+}
+#menu{
+	position: static;
+}
+h2{
+	font-weight: 300;
+	font-size:32px;
+	margin-top: 0;
+}
+button{
+    height:40px;
+    border-radius: 10px;
+    cursor: pointer;
+    color:white;
+	font-size: 16px;
+	padding: 6px 12px;	
+	border: none;
+}
+.botao-azul{
+    background-color:#0069d9;
+}
+textarea{
+	font-size: 20px;
+	width: 100%;
+}
+.resposta-usuario{
+	
+	border-color: rgb(226, 201, 201);
+	border-radius: 5px;
+	box-shadow: none;
+}
+textarea:focus{
+
+	border-color: rgb(226, 201, 201);
+	box-shadow: none;
+	box-shadow: 0 0 3pt 2pt rgb(226, 201, 201);
+	outline:none;
+}
+#info{
+	margin-bottom: 100px;
+
+}
+#elemento h3{
+	font-size: 28px;
+	font-weight: 200;
+}
+#resultado p{
+	vertical-align: middle;
+}
+
+############HTML##################
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <meta charset="utf-8">
+        <title>Escolha</title>
+        <link rel="stylesheet" href="../css/main.css"/>
+        <link rel="stylesheet" href="../css/escolha.css">
+    </head>
+    <body>
+        <div>
+            <div class="cabecalho row" >
+                <h1>Categoria</h1>
+            </div>
+
+            <div class="center">
+                <div class="row" >
+                    <a class="button" href="./treino.html">
+                    <button type="button" class="botao-azul">Átomos neutros</button>
+                    </a>
+                </div>
+                <div class="row">
+                <a class="button" href="./ions.html">
+                    <button type="button" class="botao-azul">Átomos Íons</button>
+                </a>
+                </div>
+            </div>
+            </div>
+            <div class="navbar">
+            <a href="../index.html" >
+                <img src="../img/home.svg" class="icon"><br>
+                <span>QuimiLOL</span>
+            </a>
+            <a href="escolha.html" class="active">
+                <img src="../img/tablet.svg" class="icon"><br>
+                <span>Distribuidor</span>
+            </a>
+            <a href="tabela.html">
+                <img src="../img/tab.svg" class="icon"><br>
+                <span>Tabela</span>
+            </a>
+        </div>
+    </body>
+</html>
+<html>
+    <head>
+        <title> Exercitando</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="../css/main.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/treino.css"/>
+        <script type="text/javascript" src="../js/ions.js"></script>
+        <script src="../js/info.json"></script>
+        <style>
+            #menu{
+                position: static;
+            }
+        </style>
+    </head>
+      <body >
+        <div class = "container">
+            <div class="cabecalho row">
+                <h1 class="h1">Íons</h1>
+            </div>
+            <div class="row">
+                <h2>Agora é sua vez de tentar!Distribua o seguite íon:</h2>
+                <br>
+                <div class="col-md" id="elemento">
+                    <sup><h6 style="display:inline;" id="numeroAtomico"></h6></sup>
+                    <h3 id="elementoQuimico"></h3><sup id="sinal"></sup>
+                </div>
+
+                <div class="col-md" >
+                    <button class="botao-azul" onclick="verificarIons()" >Verificar</button>
+                    <button class="botao-azul" onclick="escolherIons()"> Escolher</button>
+                    <button class="botao-azul" onclick="sortearIons()">Sortear</button>
+
+                </div>
+                <div class = "container" style="padding:5px">
+                    <textarea autofocus class="resposta-usuario" id="respostaUser" rows="5" ></textarea>
+                    <div id="resultado"></div>
+                    <div id="respostaUserDiv"></div>
+                    <div id="resposta"></div>
+                    <div id="info">
+                        <p id="nivelMaisEnergetico"></p>
+                        <p id="nivelMaisExterno"></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="navbar">
+            <a href="../index.html" >
+                <img src="../img/home.svg" class="icon"><br>
+                <span>QuimiLOL</span>
+            </a>
+            <a href="escolha.html" class="active">
+                <img src="../img/tablet.svg" class="icon"><br>
+                <span>Distribuidor</span>
+            </a>
+            <a href="tabela.html">
+                <img src="../img/tab.svg" class="icon"><br>
+                <span>Tabela</span>
+            </a>
+        </div>
+    </body>
+</html>
+<html>
+    <head>
+        <title>Tabela Periódica</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="../css/main.css"/>
+        <link rel="stylesheet" href="../css/tabela.css">
+    </head>
+    <body>
+        <div class="cabecalho">
+            <h1 class="h1">Tabela</h1>
+        </div>
+        <div style="overflow: scroll;" >
+            <img style="overflow: scroll;" src="../img/tabela.svg" >;
+        </div>
+
+    <div class="navbar">
+        <a href="../index.html" >
+            <img src="../img/home.svg" class="icon"><br>
+            <span>QuimiLOL</span>
+        </a>
+        <a href="escolha.html">
+            <img src="../img/tablet.svg" class="icon"><br>
+            <span>Distribuidor</span>
+        </a>
+        <a href="tabela.html" class="active">
+            <img src="../img/tab.svg" class="icon"><br>
+            <span>Tabela</span>
+        </a>
+    </div>
+    </body>
+</html>
+<html>
+    <head>
+        <title> Exercitando</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="../css/main.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/treino.css"/>
+        <script type="text/javascript" src="../js/treino.js"></script>
+        
+    </head>
+    <body>
+        <div>
+            <div class="cabecalho" >
+                <h1 class="h1-pequeno">Átomos neutros</h1>
+            </div>
+            <div >
+                <h2>
+                    Exercitando sua aprendizagem...
+                    Escolha o número atômico do elemento e boa distribuição!
+                </h2>
+                
+                <div id="elemento">
+                    <sup><h6 style="display:inline;"></h6></sup><h3></h3>
+                </div>
+
+                <div >
+                    <button class="botao-azul" onclick="verificar()" >Verificar</button>
+                    <button class="botao-azul" onclick="escolher()"> Escolher</button>
+                    <button class="botao-azul" onclick="sortear()">Sortear</button>
+                </div>
+                <div class="container" style="padding:5px">
+                    <textarea autofocus class="resposta-usuario" id="respostaUser" rows="5" ></textarea>
+
+                    <div id="resultado"></div>
+                    <div id="respostaUserDiv"></div>
+                    <div id="resposta"></div>
+                    <div id="info">
+                    <p id="nivelMaisEnergetico"></p>
+                    <p id="nivelMaisExterno"></p>
+
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar">
+            <a href="../index.html" >
+                <img src="../img/home.svg" class="icon"><br>
+                <span>QuimiLOL</span>
+            </a>
+            <a href="escolha.html" class="active">
+                <img src="../img/tablet.svg" class="icon"><br>
+                <span>Distribuidor</span>
+            </a>
+            <a href="tabela.html">
+                <img src="../img/tab.svg" class="icon"><br>
+                <span>Tabela</span>
+            </a>
+        </div>
+    </body>
+</html>
+#####################json#############
+var json = [
+    {
+       "nome":"H",
+       "numAtomico":"1",
+       "distribuicao":"1s1",
+       "carga":"1",
+       "externo":"1s",
+       "energetico":"1s"
+    },
+    {
+       "nome":"He",
+       "numAtomico":"2",
+       "distribuicao":"1s2 ",
+       "carga":"0",
+       "externo":"1s",
+       "energetico":"1s"
+    },
+    {
+       "nome":"Li",
+       "numAtomico":"3",
+       "distribuicao":"1s2 ",
+       "carga":"1",
+       "externo":"2s",
+       "energetico":"2s"
+    },
+    {
+       "nome":"Be",
+       "numAtomico":"4",
+       "distribuicao":"1s2 ",
+       "carga":"2",
+       "externo":"2s",
+       "energetico":"2s"
+    },
+    {
+       "nome":"B",
+       "numAtomico":"5",
+       "distribuicao":"1s2 2s2 2p1",
+       "carga":"0",
+       "externo":"2p",
+       "energetico":"2p"
+    },
+    {
+       "nome":"C",
+       "numAtomico":"6",
+       "distribuicao":"1s2 2s2 2p6",
+       "carga":"-4",
+       "externo":"2p",
+       "energetico":"2p"
+    },
+    {
+       "nome":"N",
+       "numAtomico":"7",
+       "distribuicao":"1s2 2s2 2p6",
+       "carga":"-3",
+       "externo":"2p",
+       "energetico":"2p"
+    },
+    {
+       "nome":"O",
+       "numAtomico":"8",
+       "distribuicao":"1s2 2s2 2p6",
+       "carga":"-2",
+       "externo":"2p",
+       "energetico":"2p"
+    },
+    {
+       "nome":"F",
+       "numAtomico":"9",
+       "distribuicao":"1s2 2s2 2p6",
+       "carga":"-1",
+       "externo":"2p",
+       "energetico":"2p"
+    },
+    {
+       "nome":"Ne",
+       "numAtomico":"10",
+       "distribuicao":"1s2 2s2 2p6",
+       "carga":"0",
+       "externo":"2p",
+       "energetico":"2p"
+    },
+    {
+       "nome":"Na",
+       "numAtomico":"11",
+       "distribuicao":"1s2 2s2 2p6 ",
+       "carga":"1",
+       "externo":"3s",
+       "energetico":"3s"
+    },
+    {
+       "nome":"Mg",
+       "numAtomico":"12",
+       "distribuicao":"1s2 2s2 2p6 ",
+       "carga":"2",
+       "externo":"3s",
+       "energetico":"3s"
+    },
+    {
+       "nome":"Al",
+       "numAtomico":"13",
+       "distribuicao":"1s2 2s2 2p6 ",
+       "carga":"3",
+       "externo":"3p",
+       "energetico":"3p"
+    },
+    {
+       "nome":"Si",
+       "numAtomico":"14",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 ",
+       "carga":"-4",
+       "externo":"3p",
+       "energetico":"3p"
+    },
+    {
+       "nome":"P",
+       "numAtomico":"15",
+       "distribuicao":"1s2 2s2 2p63s2 3p6 ",
+       "carga":"-3",
+       "externo":"3p",
+       "energetico":"3p"
+    },
+    {
+       "nome":"S",
+       "numAtomico":"16",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6",
+       "carga":"-2",
+       "externo":"3p",
+       "energetico":"3p"
+    },
+    {
+       "nome":"Cl",
+       "numAtomico":"17",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6",
+       "carga":"-1",
+       "externo":"3p",
+       "energetico":"3p"
+    },
+    {
+       "nome":"Ar",
+       "numAtomico":"18",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 ",
+       "carga":"0",
+       "externo":"3p",
+       "energetico":"3p"
+    },
+    {
+       "nome":"K",
+       "numAtomico":"19",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 ",
+       "carga":"1",
+       "externo":"3p",
+       "energetico":"3p"
+    },
+    {
+       "nome":"Ca",
+       "numAtomico":"20",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 ",
+       "carga":"2",
+       "externo":"3p",
+       "energetico":"3p"
+    },
+    {
+       "nome":"Sc",
+       "numAtomico":"21",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 3d1 ",
+       "carga":"2",
+       "externo":"3d",
+       "energetico":"3d"
+    },
+    {
+       "nome":"Ti",
+       "numAtomico":"22",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 3d2 ",
+       "carga":"2",
+       "externo":"3d",
+       "energetico":"3d"
+    },
+    {
+       "nome":"V",
+       "numAtomico":"23",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 3d3 ",
+       "carga":"2",
+       "externo":"3d",
+       "energetico":"3d"
+    },
+    {
+       "nome":"Cr",
+       "numAtomico":"24",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d4 ",
+       "carga":"2",
+       "externo":"3d",
+       "energetico":"3d"
+    },
+    {
+       "nome":"Mn",
+       "numAtomico":"25",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d5 ",
+       "carga":"2",
+       "externo":"3d",
+       "energetico":"3d"
+    },
+    {
+       "nome":"Fe",
+       "numAtomico":"26",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d6 ",
+       "carga":"2",
+       "externo":"3d",
+       "energetico":"3d"
+    },
+    {
+       "nome":"Co",
+       "numAtomico":"27",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d7 ",
+       "carga":"2",
+       "externo":"3d",
+       "energetico":"3d"
+    },
+    {
+       "nome":"Ni",
+       "numAtomico":"28",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d8 ",
+       "carga":"2",
+       "externo":"3d",
+       "energetico":"3d"
+    },
+    {
+       "nome":"Cu",
+       "numAtomico":"29",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 3d9",
+       "carga":"2",
+       "externo":"4s",
+       "energetico":"3d"
+    },
+    {
+       "nome":"Zn",
+       "numAtomico":"30",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10",
+       "carga":"2",
+       "externo":"3d",
+       "energetico":"3d"
+    },
+    {
+       "nome":"Ga",
+       "numAtomico":"31",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p1",
+       "carga":"1",
+       "externo":"4p",
+       "energetico":"4p"
+    },
+    {
+       "nome":"Ge",
+       "numAtomico":"32",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p2",
+       "carga":"-4",
+       "externo":"4p",
+       "energetico":"4p"
+    },
+    {
+       "nome":"As",
+       "numAtomico":"33",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6",
+       "carga":"-3",
+       "externo":"4p",
+       "energetico":"4p"
+    },
+    {
+       "nome":"Se",
+       "numAtomico":"34",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6",
+       "carga":"-2",
+       "externo":"4p",
+       "energetico":"4p"
+    },
+    {
+       "nome":"Br",
+       "numAtomico":"35",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6",
+       "carga":"-1",
+       "externo":"4p",
+       "energetico":"4p"
+    },
+    {
+       "nome":"Kr",
+       "numAtomico":"36",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6",
+       "carga":"0",
+       "externo":"4p",
+       "energetico":"4p"
+    },
+    {
+       "nome":"Rb",
+       "numAtomico":"37",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 ",
+       "carga":"1",
+       "externo":"46",
+       "energetico":"46"
+    },
+    {
+       "nome":"Sr",
+       "numAtomico":"38",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 ",
+       "carga":"2",
+       "externo":"4p",
+       "energetico":"46"
+    },
+    {
+       "nome":"Y",
+       "numAtomico":"39",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 ",
+       "carga":"3",
+       "externo":"4p",
+       "energetico":"4p"
+    },
+    {
+       "nome":"Zr",
+       "numAtomico":"40",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 4d2",
+       "carga":"2",
+       "externo":"4d",
+       "energetico":"4d"
+    },
+    {
+       "nome":"Nb",
+       "numAtomico":"41",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s1 4d4",
+       "carga":"2",
+       "externo":"4d",
+       "energetico":"4d"
+    },
+    {
+       "nome":"Mo",
+       "numAtomico":"42",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s1 4d5",
+       "carga":"2",
+       "externo":"4d",
+       "energetico":"4d"
+    },
+    {
+       "nome":"Tc",
+       "numAtomico":"43",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d5",
+       "carga":"2",
+       "externo":"4d",
+       "energetico":"4d"
+    },
+    {
+       "nome":"Ru",
+       "numAtomico":"44",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s1 4d7",
+       "carga":"2",
+       "externo":"4d",
+       "energetico":"4d"
+    },
+    {
+       "nome":"Rh",
+       "numAtomico":"45",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s1 4d8",
+       "carga":"2",
+       "externo":"4d",
+       "energetico":"4d"
+    },
+    {
+       "nome":"Pd",
+       "numAtomico":"46",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 4d10",
+       "carga":"2",
+       "externo":"4d",
+       "energetico":"4d"
+    },
+    {
+       "nome":"Ag",
+       "numAtomico":"47",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s1 4d10",
+       "carga":"1",
+       "externo":"5s",
+       "energetico":"4d"
+    },
+    {
+       "nome":"Cd",
+       "numAtomico":"48",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10",
+       "carga":"2",
+       "externo":"4d",
+       "energetico":"4d"
+    },
+    {
+       "nome":"In",
+       "numAtomico":"49",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p1",
+       "carga":"1",
+       "externo":"5p",
+       "energetico":"5p"
+    },
+    {
+       "nome":"Sn",
+       "numAtomico":"50",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p2",
+       "carga":"-4",
+       "externo":"5p",
+       "energetico":"5p"
+    },
+    {
+       "nome":"Sb",
+       "numAtomico":"51",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p3",
+       "carga":"-3",
+       "externo":"5p",
+       "energetico":"5p"
+    },
+    {
+       "nome":"Te",
+       "numAtomico":"52",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p4",
+       "carga":"-2",
+       "externo":"5p",
+       "energetico":"5p"
+    },
+    {
+       "nome":"I",
+       "numAtomico":"53",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p5",
+       "carga":"-1",
+       "externo":"5p",
+       "energetico":"5p"
+    },
+    {
+       "nome":"Xe",
+       "numAtomico":"54",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6",
+       "carga":"0",
+       "externo":"5p",
+       "energetico":"5p"
+    },
+    {
+       "nome":"Cs",
+       "numAtomico":"55",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s1",
+       "carga":"1",
+       "externo":"6s",
+       "energetico":"6s"
+    },
+    {
+       "nome":"Ba",
+       "numAtomico":"56",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2",
+       "carga":"2",
+       "externo":"6s",
+       "energetico":"6s"
+    },
+    {
+       "nome":"La",
+       "numAtomico":"57",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s1 5d2",
+       "carga":"2",
+       "externo":"5p",
+       "energetico":"4f"
+    },
+    {
+       "nome":"Ce",
+       "numAtomico":"58",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 5d1 4f1",
+       "carga":"2",
+       "externo":"5d",
+       "energetico":"4f"
+    },
+    {
+       "nome":"Pr",
+       "numAtomico":"59",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f3",
+       "carga":"2",
+       "externo":"5p",
+       "energetico":"4f"
+    },
+    {
+       "nome":"Nd",
+       "numAtomico":"60",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f4",
+       "carga":"2",
+       "externo":"5p",
+       "energetico":"4f"
+    },
+    {
+       "nome":"Pm",
+       "numAtomico":"61",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f5",
+       "carga":"2",
+       "externo":"5p",
+       "energetico":"4f"
+    },
+    {
+       "nome":"Sm",
+       "numAtomico":"62",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f6",
+       "carga":"2",
+       "externo":"5p",
+       "energetico":"4f"
+    },
+    {
+       "nome":"Eu",
+       "numAtomico":"63",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f7",
+       "carga":"2",
+       "externo":"5p",
+       "energetico":"4f"
+    },
+    {
+       "nome":"Gd",
+       "numAtomico":"64",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 4f7 ",
+       "carga":"3",
+       "externo":"5p",
+       "energetico":"4f"
+    },
+    {
+       "nome":"Tb",
+       "numAtomico":"65",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f9",
+       "carga":"2",
+       "externo":"5p",
+       "energetico":"4f"
+    },
+    {
+       "nome":"Dy",
+       "numAtomico":"66",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f10",
+       "carga":"2",
+       "externo":"5p",
+       "energetico":"4f"
+    },
+    {
+       "nome":"Ho",
+       "numAtomico":"67",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f11",
+       "carga":"2",
+       "externo":"5p",
+       "energetico":"4f"
+    },
+    {
+       "nome":"Er",
+       "numAtomico":"68",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f12",
+       "carga":"2",
+       "externo":"5p",
+       "energetico":"4f"
+    },
+    {
+       "nome":"Tm",
+       "numAtomico":"69",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f13",
+       "carga":"2",
+       "externo":"5p",
+       "energetico":"4f"
+    },
+    {
+       "nome":"Yb",
+       "numAtomico":"70",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14",
+       "carga":"2",
+       "externo":"5p",
+       "energetico":"4f"
+    },
+    {
+       "nome":"Lu",
+       "numAtomico":"71",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d1",
+       "carga":"2",
+       "externo":"6s",
+       "energetico":"5d"
+    },
+    {
+       "nome":"Hf",
+       "numAtomico":"72",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d2",
+       "carga":"2",
+       "externo":"6s",
+       "energetico":"5d"
+    },
+    {
+       "nome":"Ta",
+       "numAtomico":"73",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d3",
+       "carga":"2",
+       "externo":"6s",
+       "energetico":"5d"
+    },
+    {
+       "nome":"W",
+       "numAtomico":"74",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d4",
+       "carga":"2",
+       "externo":"6s",
+       "energetico":"5d"
+    },
+    {
+       "nome":"Re",
+       "numAtomico":"75",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d5",
+       "carga":"2",
+       "externo":"6s",
+       "energetico":"5d"
+    },
+    {
+       "nome":"Os",
+       "numAtomico":"76",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d6",
+       "carga":"2",
+       "externo":"6s",
+       "energetico":"5d"
+    },
+    {
+       "nome":"Ir",
+       "numAtomico":"77",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d7",
+       "carga":"2",
+       "externo":"6s",
+       "energetico":"5d"
+    },
+    {
+       "nome":"Pt",
+       "numAtomico":"78",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s1 4f14 5d9",
+       "carga":"2",
+       "externo":"6s",
+       "energetico":"5d"
+    },
+    {
+       "nome":"Au",
+       "numAtomico":"79",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 4f14 5d8",
+       "carga":"1",
+       "externo":"5d",
+       "energetico":"5d"
+    },
+    {
+       "nome":"Hg",
+       "numAtomico":"80",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 4f14 5d10",
+       "carga":"2",
+       "externo":"5d",
+       "energetico":"5d"
+    },
+    {
+       "nome":"Tl",
+       "numAtomico":"81",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p1",
+       "carga":"1",
+       "externo":"6p",
+       "energetico":"6p"
+    },
+    {
+       "nome":"Pb",
+       "numAtomico":"82",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 ",
+       "carga":"2",
+       "externo":"6s",
+       "energetico":"5d"
+    },
+    {
+       "nome":"Bi",
+       "numAtomico":"83",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 ",
+       "carga":"3",
+       "externo":"6s",
+       "energetico":"5d"
+    },
+    {
+       "nome":"Po",
+       "numAtomico":"84",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p4",
+       "carga":"-2",
+       "externo":"6p",
+       "energetico":"6p"
+    },
+    {
+       "nome":"At",
+       "numAtomico":"85",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p5",
+       "carga":"-1",
+       "externo":"6p",
+       "energetico":"6p"
+    },
+    {
+       "nome":"Rn",
+       "numAtomico":"86",
+       "distribuicao":" 1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6",
+       "carga":"0",
+       "externo":"6p",
+       "energetico":"6p"
+    },
+    {
+       "nome":"Fr",
+       "numAtomico":"87",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 ",
+       "carga":"1",
+       "externo":"6p",
+       "energetico":"6p"
+    },
+    {
+       "nome":"Ra",
+       "numAtomico":"88",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 ",
+       "carga":"2",
+       "externo":"6p",
+       "energetico":"6p"
+    },
+    {
+       "nome":"Ac",
+       "numAtomico":"89",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 6d1",
+       "carga":"2",
+       "externo":"6p",
+       "energetico":"5f"
+    },
+    {
+       "nome":"Th",
+       "numAtomico":"90",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 6d2",
+       "carga":"2",
+       "externo":"6d",
+       "energetico":"6d"
+    },
+    {
+       "nome":"Pa",
+       "numAtomico":"91",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f2 6d",
+       "carga":"2",
+       "externo":"6p",
+       "energetico":"5f"
+    },
+    {
+       "nome":"U",
+       "numAtomico":"92",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 5f3 6d1",
+       "carga":"2",
+       "externo":"6d",
+       "energetico":"6d"
+    },
+    {
+       "nome":"Np",
+       "numAtomico":"93",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f4 6d1",
+       "carga":"2",
+       "externo":"6p",
+       "energetico":"5f"
+    },
+    {
+       "nome":"Pu",
+       "numAtomico":"94",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f6",
+       "carga":"2",
+       "externo":"6p",
+       "energetico":"5f"
+    },
+    {
+       "nome":"Am",
+       "numAtomico":"95",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f7",
+       "carga":"2",
+       "externo":"6p",
+       "energetico":"5f"
+    },
+    {
+       "nome":"Cm",
+       "numAtomico":"96",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f7 6d1",
+       "carga":"2",
+       "externo":"6p",
+       "energetico":"5f"
+    },
+    {
+       "nome":"Bk",
+       "numAtomico":"97",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f9",
+       "carga":"2",
+       "externo":"6p",
+       "energetico":"5f"
+    },
+    {
+       "nome":"Cf",
+       "numAtomico":"98",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f10",
+       "carga":"2",
+       "externo":"6p",
+       "energetico":"5f"
+    },
+    {
+       "nome":"Es",
+       "numAtomico":"99",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f11",
+       "carga":"2",
+       "externo":"6p",
+       "energetico":"5f"
+    },
+    {
+       "nome":"Fm",
+       "numAtomico":"100",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f12",
+       "carga":"2",
+       "externo":"6p",
+       "energetico":"5f"
+    },
+    {
+       "nome":"Md",
+       "numAtomico":"101",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f13",
+       "carga":"2",
+       "externo":"6p",
+       "energetico":"5f"
+    },
+    {
+       "nome":"No",
+       "numAtomico":"102",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f14",
+       "carga":"2",
+       "externo":"6p",
+       "energetico":"5f"
+    },
+    {
+       "nome":"Lr",
+       "numAtomico":"103",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f14 7p1",
+       "carga":"2",
+       "externo":"7s",
+       "energetico":"6d"
+    },
+    {
+       "nome":"Rf",
+       "numAtomico":"104",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f14 6d2",
+       "carga":"2",
+       "externo":"7s",
+       "energetico":"6d"
+    },
+    {
+       "nome":"Db",
+       "numAtomico":"105",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f14 6d3",
+       "carga":"2",
+       "externo":"7s",
+       "energetico":"6d"
+    },
+    {
+       "nome":"Sg",
+       "numAtomico":"106",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f14 6d4",
+       "carga":"2",
+       "externo":"7s",
+       "energetico":"6d"
+    },
+    {
+       "nome":"Bh",
+       "numAtomico":"107",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f14 6d5",
+       "carga":"2",
+       "externo":"7s",
+       "energetico":"6d"
+    },
+    {
+       "nome":"Hs",
+       "numAtomico":"108",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f14 6d6",
+       "carga":"2",
+       "externo":"7s",
+       "energetico":"6d"
+    },
+    {
+       "nome":"Mt",
+       "numAtomico":"109",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f14 6d7",
+       "carga":"2",
+       "externo":"7s",
+       "energetico":"6d"
+    },
+    {
+       "nome":"Ds",
+       "numAtomico":"110",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f14 6d8",
+       "carga":"2",
+       "externo":"7s",
+       "energetico":"6d"
+    },
+    {
+       "nome":"Rg",
+       "numAtomico":"111",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f14 6d9",
+       "carga":"2",
+       "externo":"7s",
+       "energetico":"6d"
+    },
+    {
+       "nome":"Cn",
+       "numAtomico":"112",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f14 6d10",
+       "carga":"2",
+       "externo":"7s",
+       "energetico":"6d"
+    },
+    {
+       "nome":"Nh",
+       "numAtomico":"113",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f14 6d10 7p1",
+       "carga":"1",
+       "externo":"7p",
+       "energetico":"7p"
+    },
+    {
+       "nome":"Fl",
+       "numAtomico":"114",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f14 6d10 7p2",
+       "carga":"-4",
+       "externo":"7p",
+       "energetico":"7p"
+    },
+    {
+       "nome":"Mc",
+       "numAtomico":"115",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f14 6d10 7p3",
+       "carga":"-3",
+       "externo":"7p",
+       "energetico":"7p"
+    },
+    {
+       "nome":"Lv",
+       "numAtomico":"116",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f14 6d10 7p4",
+       "carga":"-2",
+       "externo":"7p",
+       "energetico":"7p"
+    },
+    {
+       "nome":"Ts",
+       "numAtomico":"117",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f14 6d10 7p5",
+       "carga":"-1",
+       "externo":"7p",
+       "energetico":"7p"
+    },
+    {
+       "nome":"Og",
+       "numAtomico":"118",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f14 6d10 7p6",
+       "carga":"0",
+       "externo":"7p",
+       "energetico":"7p"
+    },
+    {
+       "nome":"Uue",
+       "numAtomico":"119",
+       "distribuicao":"1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f14 6d10 7p6 8s1",
+       "carga":"1",
+       "externo":"8s",
+       "energetico":"7p"
+    }
+ ]
+#############javascript##############
+
+var naEscolhido;
+
+function comparaStrings(string1,string2){
+    //String 1 é a correta
+    let dados = [];
+    let string1Formatada = "";
+    let string2Formatada = "";
+    let s1,s2,iguais=true;
+    string1 = string1.trim().split(" ");
+    string2 = string2.trim().split(" ");
+    let t = string1.length>string2.length ? string1.length: string2.length;
+    for (let i=0;i<t;i++){
+        s1 = string1[i];
+        s2 = string2[i];
+        if (s2!= undefined){
+            if (s1!=s2){
+                string2Formatada += "<span class='spanIncorreto'> "+s2+" </span>";
+                iguais=false;
+            }
+            else{
+                string2Formatada += "<span class='spanCorreto'> "+s2+" </span>";
+            }
+        }
+        if (s1!=undefined){
+            string1Formatada += "<span> "+s1+" </span>";
+        }
+        if (s2==undefined && s1!=undefined){
+            iguais=false;
+        }
+
+    }
+    dados.push(string1Formatada,string2Formatada,iguais);
+    return dados;
+}
+
+
+function resposta(n) {
+    let aux = 0;
+    let inicio = "1s";
+    let string1 = "";
+    let falta = "1";
+    while (falta != 0) {
+        falta = n - aux;
+        let capacidade = this.defineCapacidade(inicio[1]);
+        if (falta >= capacidade) {
+            string1 += inicio + capacidade + " ";
+            inicio = dic[inicio];
+            aux += capacidade;
+        } else if (falta == 0) {
+        } else {
+            string1 += inicio + falta + " ";
+            aux += falta;
+        }
+    }
+    return string1;
+}
+function limpar(){
+    document.getElementById("resultado").innerHTML = "";
+    document.getElementById("resposta").innerHTML = "";
+    document.getElementById("respostaUserDiv").innerHTML = "";
+    document.getElementById("respostaUser").value = "";
+    document.getElementById("info").innerHTML = "";
+
+}
+function verificarIons(){
+    if (naEscolhido==undefined){
+      return;
+    }
+
+    let respostaUser = document.getElementById("respostaUser").value.trim();
+
+    respostaCorreta = json[naEscolhido-1].distribuicao.trim();
+    NA = parseInt(naEscolhido);
+
+    let listaDados = comparaStrings(respostaCorreta,respostaUser);
+    limpar();
+    if (listaDados[2]){
+
+        document.getElementById("resultado").innerHTML = "<img src=../img/correta.svg class='icon' >";//+"<br>";
+        document.getElementById("resultado").innerHTML += "<p style='display:inline'>LOL Muito bem!Escolha outros elementos</p>";
+    }
+    else{
+        // document.getElementById("resultado").innerHTML = "<img src=../img/errada.png class='icon' >"+"<br>";
+        document.getElementById("resposta").innerHTML ="<span> Resposta correta: </span>"+ listaDados[0];
+        document.getElementById('respostaUserDiv').innerHTML ="<span>Sua resposta:</span/>"+ listaDados[1];
+
+        document.getElementById("resultado").innerHTML = "<img src=../img/errada.svg class='icon' >";//+"<br>";
+        document.getElementById("resultado").innerHTML += "<p style='display:inline'>OPSLOL...</p><p>Não desanime!Revise o diagrama</p>";
+
+    }
+    let energetico = json[naEscolhido-1].energetico;
+    let externo = json[naEscolhido-1].externo;
+    document.getElementById("info").innerHTML = "<br>"+
+    "<h4 class='title'>Infomações adicionais</h4>"+
+    "<p>Sub nível mais energético: "+energetico+"</p>"+
+    "<p>Sub nível mais externo: "+ externo+"</p>";
+}
+function sortearIons(){
+    let i = Math.floor(Math.random() * 100);
+    let elemeto_quimico = json[i-1].nome;
+    naEscolhido = i;
+    // document.getElementById("elemento").innerHTML = "<sup>"+(i)+"</sup>"+"<h3>"+elemeto_quimico+"</h3>";
+    defineIon(i);
+    limpar();
+
+}
+
+function escolherIons(){
+    let n = prompt("Digite o nº atômico do elemento:",1);
+    if (n==undefined){n=1}
+    let elemeto_quimico = json[n-1].nome;
+    naEscolhido = n;
+    defineIon(n)
+    limpar();
+    //return elementos[n];
+}
+function defineIon(n){
+    document.getElementById("numeroAtomico").innerHTML = n;
+    document.getElementById("elementoQuimico").innerHTML = json[n-1].nome;
+    let sinal = parseInt(json[n-1].carga);
+    if (sinal<=0){
+        document.getElementById("sinal").innerHTML = json[n-1].carga;
+    }
+    else{
+        document.getElementById("sinal").innerHTML ="+"+ json[n-1].carga;
+    }
+
+}
+function distribuirElemento(n){
+  var aux=0;
+  var inicio = "1s";
+  // var string=elementos[n-1]+'-';
+  string = "";
+  let falta="1";
+  while (falta!=0) {
+      falta = n-aux;
+      let capacidade = defineCapacidade(inicio[1]);
+      if (falta>=capacidade){
+          string += inicio+capacidade+" ";
+          inicio = dic[inicio];
+          aux+=capacidade;
+      }
+      else if(falta==0){}
+      else{
+          string += inicio+falta;
+          aux+=falta;
+      }
+  }
+  return string
+}
+function ordenaNivel(distribicaoEletronica){
+  let lista = distribicaoEletronica.trim().split(" ");
+  let ordenamento=[];
+  let menor="9";
+  let ordenado="";
+  let aux;
+  let tam = lista.length
+  // console.log("tam:"+tam);
+  // console.log(lista)
+  for (let i=0;i<tam;i++){
+    for (let j=0;j<tam;j++){
+      if (lista[j][0]<menor && ordenamento.indexOf(lista[j])==-1){
+        // console.log(lista[j][0])
+
+        menor=lista[j][0];
+        aux = lista[j]
+      }
+    }
+    ordenamento.push(aux);
+    menor="9";
+  }
+  // console.log("lista: "+lista)
+  // console.log("orede: "+ ordenamento)
+
+  // console.log("lista: "+tamanho(lista))
+  // console.log("orede: "+ tamanho(ordenamento))
+
+
+  for (let y=0;y<ordenamento.length;y++){
+    ordenado +=ordenamento[y]+" "
+  }
+  return ordenado;
+}
+var elementos = [
+    'H', 'He', 'Li', 'Be', 'B', 'C', 'N', 'O', 'F', 'Ne', 'Na', 'Mg', 'Al', 'Si',
+    'P', 'S', 'Cl', 'Ar', 'K', 'Ca', 'Sc', 'Ti', 'V', 'Cr', 'Mn', 'Fe', 'Co', 'Ni',
+    'Cu', 'Zn', 'Ga', 'Ge', 'As', 'Se', 'Br', 'Kr', 'Rb', 'Sr', 'Y', 'Zr', 'Nb', 'Mo',
+    'Tc', 'Ru', 'Rh', 'Pd', 'Ag', 'Cd', 'In', 'Sn', 'Sb', 'Te', 'I', 'Xe', 'Cs', 'Ba',
+    'La', 'Ce', 'Pr', 'Nd', 'Pm', 'Sm', 'Eu', 'Gd', 'Tb', 'Dy', 'Ho', 'Er', 'Tm', 'Yb',
+    'Lu', 'Hf', 'Ta', 'W', 'Re', 'Os', 'Ir', 'Pt', 'Au', 'Hg', 'Tl', 'Pb', 'Bi', 'Po',
+    'At', 'Rn', 'Fr', 'Ra', 'Ac', 'Th', 'Pa', 'U', 'Np', 'Pu', 'Am', 'Cm', 'Bk', 'Cf',
+    'Es', 'Fm', 'Md', 'No', 'Lr', 'Rf', 'Db', 'Sg', 'Bh', 'Hs', 'Mt', 'Ds', 'Rg','Cn',
+    'Nh','Fl','Mc','Lv','Ts','Og','Uue','Ubn'
+];
+var dic = {
+    "1s": "2s","2s": "2p","2p": "3s","3s": "3p","3p": "4s","4s": "3d",
+    "3d": "4p","4p": "5s","5s": "4d","4d": "5p","5p": "6s","6s": "4f",
+    "4f": "5d","5d": "6p","6p": "7s","7s": "5f","5f": "6d","6d": "7p",
+    "7p": " "
+};
+
+var naEscolhido=4;
+function sortear(){
+    let i = Math.floor(Math.random() * 100);
+    let elemeto_quimico = elementos[i-1];
+    naEscolhido = i;
+    document.getElementById("elemento").innerHTML = "<sup>"+(i)+"</sup>"+"<h3>"+elemeto_quimico+"</h3>";
+    limpar();
+}
+function limpar(){
+    document.getElementById("resultado").innerHTML = "";
+    document.getElementById("resposta").innerHTML = "";
+    document.getElementById("respostaUserDiv").innerHTML = "";
+    document.getElementById("respostaUser").value = "";
+    document.getElementById("info").innerHTML = "";
+}
+function escolher(){
+    let n = prompt("Digite o nº atômico do elemento:",1);
+    if (n==undefined){n=1}
+    let elemeto_quimico = elementos[n-1];
+    naEscolhido = n;
+    document.getElementById("elemento").innerHTML = "<sup>"+(n)+"</sup>"+"<h3>"+elemeto_quimico+"</h3>";
+    limpar();
+}
+function verificar(){
+    let respostaUser = document.getElementById("respostaUser").value.trim();
+    let respostaCorreta = resposta(naEscolhido).trim();
+
+    if (naEscolhido==46){
+        respostaCorreta = "1s2 2s2 2sp6 3s2 3p6 4s2 3d10 4p6 5s1 4d9";
+    }
+    else if (naEscolhido==24){
+        respostaCorreta = "1s2 2s2 2sp6 3s2 3p6 4s1 3d5";
+    }
+    let listaDados = comparaStrings(respostaCorreta,respostaUser);
+
+    limpar();
+
+    if (listaDados[2]){
+        document.getElementById("resultado").innerHTML += "<img src=../img/correta.svg class='icon' >";//+"<br>";
+        document.getElementById("resultado").innerHTML += "<p style='display:inline'>LOL Muito bem!Escolha outros elementos</p>";
+    }
+    else{
+        document.getElementById("resposta").innerHTML ="<span> Resposta correta: </span>"+ listaDados[0];
+        document.getElementById('respostaUserDiv').innerHTML ="<span>Sua resposta:</span/>"+ listaDados[1];
+        document.getElementById("resultado").innerHTML = "<img src=../img/errada.svg class='icon' >";//+"<br>";
+        document.getElementById("resultado").innerHTML += "<p style='display:inline'>OPSLOL...</p><p>Não desanime!Revise o diagrama</p>";
+    }
+    document.getElementById("info").innerHTML = "<br>"+
+    "<h4 class='title'>Infomações adicionais</h4>"+
+    "<p>Sub nível mais energético: "+nivelMaisEnergetico(respostaCorreta).slice(0,2)+"</p>"+
+    "<p>Sub nível mais externo: "+ nivelMaisExterno(respostaCorreta).slice(0,2)+"</p>";
+}
+function nivelMaisEnergetico(respostaCorreta){
+    respostaCorreta = respostaCorreta.trim().split(" ");
+    return respostaCorreta[respostaCorreta.length-1]
+}
+function nivelMaisExterno(respostaCorreta){
+    respostaCorretaAux = respostaCorreta.trim();
+    respostaCorreta = ordenaNivel(respostaCorretaAux);
+    let maisExterno = respostaCorreta[respostaCorreta.length-1];
+    return maisExterno;
+}
+function ordenaNivel(distribicaoEletronica){
+  let lista = distribicaoEletronica.trim().split(" ");
+  let ordenamento=[];
+  let menor="9";
+  let ordenado="";
+  let aux;
+  let tam = lista.length;
+  for (let i=0;i<tam;i++){
+    for (let j=0;j<tam;j++){
+      if (lista[j][0]<menor && ordenamento.indexOf(lista[j])==-1){
+        menor=lista[j][0];
+        aux = lista[j]
+      }
+    }
+    ordenamento.push(aux);
+    menor="9";
+  }
+  return ordenamento;
+}
+function comparaStrings(string1,string2){
+    //String 1 é a correta
+    let dados = [];
+    let string1Formatada = "";
+    let string2Formatada = "";
+    let s1,s2,iguais=true;
+    string1 = string1.split(" ");
+    string2 = string2.split(" ");
+    let t = string1.length>string2.length ? string1.length: string2.length;
+    for (let i=0;i<t;i++){
+        s1 = string1[i];
+        s2 = string2[i];
+        if (s2!= undefined){
+            if (s1!=s2){
+                string2Formatada += "<span class='spanIncorreto'> "+s2+" </span>";
+                iguais=false;
+            }
+            else{
+                string2Formatada += "<span class='spanCorreto'> "+s2+" </span>";
+            }
+        }
+        if (s1!=undefined){
+            string1Formatada += "<span> "+s1+" </span>";
+        }
+        if (s2==undefined && s1!=undefined){
+            iguais=false;
+        }
+    }
+    dados.push(string1Formatada,string2Formatada,iguais);
+    return dados;
+}
+function resposta(n) {
+    let aux = 0;
+    let inicio = "1s";
+    let string1 = "";
+    let falta = "1";
+    while (falta != 0) {
+        falta = n - aux;
+        let capacidade = this.defineCapacidade(inicio[1]);
+        if (falta >= capacidade) {
+            string1 += inicio + capacidade + " ";
+            inicio = dic[inicio];
+            aux += capacidade;
+        } else if (falta == 0) {
+        } else {
+            string1 += inicio + falta + " ";
+            aux += falta;
+        }
+    }
+    return string1;
+}
+function defineCapacidade(s) {
+    if (s == "s") {
+        return 2;
+    } else if (s == "p") {
+        return 6;
+    } else if (s == "d") {
+        return 10;
+    } else if (s == "f") {
+        return 14;
+    }
+}
